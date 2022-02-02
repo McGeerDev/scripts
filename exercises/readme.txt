@@ -1,4 +1,4 @@
-Some random problems I found online that needs to be solved with bash.
+Some random problems I found online that can be solved with bash.
 1. Write a script that records, in a log, all the processes started after the script and specifies their parent.
 2. Edit, recursively all the names of files in a directory from uppercase letters to lowercase.
 3. Write a script that continuously shows the time with seconds.
