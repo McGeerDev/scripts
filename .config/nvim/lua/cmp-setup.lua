@@ -1,37 +1,3 @@
-syntax on
-
-let mapleader=" "
-
-set colorcolumn=80
-highlight ColorColumn ctermbg=0 
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'morhetz/gruvbox'
-Plug 'leafgarland/typescript-vim'
-Plug 'vim-utils/vim-man'
-Plug 'git@github.com:Valloric/YouCompleteMe.git'
-Plug 'mbbill/undotree'
-Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
-Plug 'hrsh7th/nvim-cmp'
-
-Plug 'hrsh7th/cmp-vsnip'
-Plug 'hrsh7th/vim-vsnip'
-
-call plug#end()
-
-colorscheme gruvbox
-set background=dark
-
-
-lua << EOF
-require'lspconfig'.tsserver.setup{}
 -- Setup nvim-cmp.
   local cmp = require'cmp'
 
@@ -98,6 +64,3 @@ require'lspconfig'.tsserver.setup{}
   require('lspconfig')['tsserver'].setup {
     capabilities = capabilities
   }
-
-EOF
-
